@@ -1,0 +1,214 @@
+html{
+ font-family:Microsoft JhengHei,微軟正黑體;
+}
+.wrap{
+ width: 1280px;
+ margin: 0 auto;
+}
+.header{
+ border:1px black solid;
+}
+.header img{
+ width:150px;
+ height:70px;
+ margin: 10px 20px;
+ border:1px black solid;
+ float:left;
+}
+.search{
+	margin: 10px 20px;
+	padding: 15px 20px;
+	height: 40px;
+	float: left;
+	font-size: 20px;
+	border:1px black solid;
+}
+.search input.keyword{
+	margin: 0px 30px;
+	width: 700px;
+	height: 30px;
+	font-size: 20px;
+}
+.search input.submit{
+	margin: 0px 30px;
+	height: 30px;
+	width: 30px;
+	background-image: url(../img/search-icon.png);
+	background-size: 30px 30px;
+	border:1px black none;
+    background-color:rgba(0,0,0,0);
+}
+.search input.cart{
+	margin: 0px 30px;
+	height: 30px;
+	width: 30px;
+	background-image: url(../img/cart-icon.png);
+	background-size: 30px 30px;
+	border:1px black none;
+	background-color:rgba(0,0,0,0);
+}
+.clear{
+	clear: both;
+}
+.sider{
+ border:1px black solid;
+ margin:20px 0px;
+ width: 210px;
+ float: left;
+}
+.sider .category{
+ padding: 10px 10px;
+ text-align: center;
+}
+.sider .category ul{
+ padding: 0px;
+ margin: 0px;
+}
+.sider .category ul li{
+ list-style-type:none;
+ padding: 0px 10px;
+  border:1px black solid;
+  text-align: center;
+}
+.container{
+ border:1px black solid;
+ margin: 20px 0px 20px 20px;
+ width: 1046px;
+ float: left;
+}
+.container .banner{
+	position: relative;
+}
+.container .banner img{
+	width: 1046px;
+	height: 400px;
+	background-color: #A8D5D7;
+}
+.container .banner .bannertext{
+	width: 600px;
+	height: 50px;
+	bottom:0;
+	left:0;
+	margin: 2px 0px;
+	padding:0px 20px;
+	position: absolute;
+    background-color:rgba(0,0,0,0.8);
+    color:white;
+    font-size: 30px;
+}
+.rank{
+ border:1px black solid;
+ margin: 5px 5px;
+}
+.rank h2{
+ margin: 0px;
+}
+.rank .rankbox{
+ border:1px black solid;
+ margin: 5px;
+ float: left;
+}
+.rank .rankbox img{
+	width: 170px;
+	height: 170px;
+	margin: 10px 12px;
+}
+.rank .rankbox p{
+	margin: 5px 0px 5px 10px;
+}
+.container .salesimage{
+ width:400px;
+ height:400px;
+ margin: 20px;
+ float: left;
+}
+.container .salesinfo{
+	float:left;
+	position: relative;
+	width: 546px;
+	margin: 0px 30px 50px 0px;
+}
+.container .salesinfo h2{
+	font-size: 30px;
+}
+.container .salesinfo p{
+}
+.container .salesinfo input{
+	position: absolute;
+	bottom: -30px;
+	right: 0px;
+	width: 150px;
+	height: 40px;
+}
+.container .salesdetail{
+	border:1px black solid;
+	margin: 0px 20px 10px 20px;
+}
+.container .salesdetail h2{
+	margin: 10px 0px 10px 10px;
+}
+.container .salesdetail .salesdetail_container{
+	margin: 5px;
+	border:1px black solid;
+	padding: 5px;	
+}
+.container .salescomment{
+	border:1px black solid;
+	margin: 0px 20px 10px 20px;
+}
+.container .salescomment h2{
+	margin: 10px 0px 10px 10px;
+	float: left;
+}
+.container .salescomment .AveragePoint{
+	float: right;
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	border:1px black solid;
+}
+.commentbox{
+	position: relative;
+}
+.container .salescomment .commentbox .commenttext{
+	border:1px black solid;
+	margin: 5px;
+	width: 850px;
+	float: left;
+	min-height: 100px;
+	padding: 5px;
+}
+.container .salescomment .commentbox .commentpoint{
+	position: absolute;
+	margin: 10px;
+	float: right;
+	font-size: 50px;
+	bottom:10px;
+	right:30px;
+}
+.container .searchresult{
+	border:1px black solid;
+	margin: 10px 5px;
+}
+.container .searchresult img{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+.container .searchresult .SearchSalesText{
+}
+.container .searchresult .SearchSalesText h2{
+	font-size: 30px;
+	margin: 10px;
+}
+.container .searchresult .SearchSalesText p{
+	font-size: 20px;
+}
+.container .searchresult input{
+	width: 150px;
+	height: 40px;
+	float: right;
+	margin-right:20px; 
+}
