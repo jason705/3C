@@ -9,89 +9,88 @@
  <div class="wrap">
   <div class='header'>
   <a href="index.html"><img src=''></a>
- 	<div class='search'>搜尋
- 	 <input class='keyword' type='text'></input>
-   <a href="search.html"><input class='submit' type='submit' value=''></input></a>
- 	 <input class='cart' type='button'></input>
- 	</div>
- 	<div class="clear"></div>
+  <div class='search'>搜尋
+   <input class='keyword' type='text'></input>
+   <a href="search.html"><div class="submit"></div></a>
+  </div>
+  <div class="function">
+   <div class="login"><a href="#">登入</a></div>
+   <div class="login"><a href="#">註冊</a></div>
+  </div>
+  <div class="clear"></div>
   </div>
   <div class="sider">
   	<div class="category">
   		篩選條件
   		<ul>
-  		<a href=""><li>分類1</li></a>
-  		<a href=""><li>分類2</li></a>
-  		<a href=""><li>分類3</li></a>
-      <a href=""><li>分類4</li></a>
-      <a href=""><li>分類5</li></a>
+  		<a href=""><li class="main">桌上型電腦</li></a>
+      <a href=""><li class="second">ACER宏碁</li></a>
+      <a href=""><li class="second">ASUS華碩</li></a>
+      <a href=""><li class="second">HP惠普</li></a>
+      <a href=""><li class="second">MSI微星</li></a>
+  		<a href=""><li class="main">筆記型電腦</li></a>
+  		<a href=""><li class="main">CPU</li></a>
+      <a href=""><li class="main">顯示卡</li></a>
+      <a href=""><li class="main">記憶體</li></a>
   		</ul>
   	</div>
-    <div class="category">
-      排序方式
-      <ul>
-      <a href=""><li>價格排序</li></a>
-      <a href=""><li>評分排序</li></a>
-      <a href=""><li>時間排序</li></a>
-      </ul>
-    </div>
   </div>
   <div class="container">
-    <a href="sales.html">
+    <div class="order">
+      <form action="">
+        排序方式:<select name="order_name">
+          <option value="">價格排序</option>
+          <option value="">評分排序</option>
+          <option value="">時間排序</option>
+        </select>
+        <select name="order_way">
+          <option value="">大到小</option>
+          <option value="">小到大</option>
+        </select>
+      </form>
+    </div>
+    <div class="clear"></div>
     <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
+    <a href="sales.html"><img src=""></a>
+      <a href="sales.html"><div class="SearchSalesText"><h2>商品標題</h2><p>商品廠牌：</br>價格：</p></div></a>
+      <div class="SearchSalesPoint">2.2</div>
       <input type='button' value="加入購物車">
       <div class="clear"></div>
     </div>
-    </a>
-    <a href="sales.html">
     <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
+    <a href="sales.html"><img src=""></a>
+      <a href="sales.html"><div class="SearchSalesText"><h2>商品標題</h2><p>商品廠牌：</br>價格：</p></div></a>
+      <div class="SearchSalesPoint">3.5</div>
       <input type='button' value="加入購物車">
       <div class="clear"></div>
     </div>
-    </a>
-    <a href="sales.html">
     <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
+    <a href="sales.html"><img src=""></a>
+      <a href="sales.html"><div class="SearchSalesText"><h2>商品標題</h2><p>商品廠牌：</br>價格：</p></div></a>
+      <div class="SearchSalesPoint">4.4</div>
       <input type='button' value="加入購物車">
       <div class="clear"></div>
     </div>
-    </a>
-    <a href="sales.html">
     <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
+    <a href="sales.html"><img src=""></a>
+      <a href="sales.html"><div class="SearchSalesText"><h2>商品標題</h2><p>商品廠牌：</br>價格：</p></div></a>
+      <div class="SearchSalesPoint">0.2</div>
       <input type='button' value="加入購物車">
       <div class="clear"></div>
     </div>
-    </a>
-    <a href="sales.html">
-    <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
-      <input type='button' value="加入購物車">
-      <div class="clear"></div>
-    </div>
-    </a>
-    <a href="sales.html">
-    <div class="searchresult">
-      <img src="">
-      <div class="SearchSalesText"><h2>商品標題</h2><p>商品說明</br>價格</p></div>
-      <div class="SearchSalesPoint"></div>
-      <input type='button' value="加入購物車">
-      <div class="clear"></div>
-    </div>
-     </a>
   </div>
+  <div class="clear"></div>
+   <div class="footer">
+   <div class="footer_inform">
+    <p>客戶服務專線：00-12345678<br/>公司地址：XX市XX區XX路XX號XX樓</p>
+   </div>
+   <div class="footer_link">
+    <h2>更多資訊</h2>
+    <a href="#" class="fb_icon"></a>
+    <a href="#" class="twitter_icon"></a>
+   </div>
+   <div class="clear"></div>
+ </div>
  </div>
 </body>
 </html>
