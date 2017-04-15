@@ -1,5 +1,9 @@
 ﻿html{
  font-family:Microsoft JhengHei,微軟正黑體;
+ background: -webkit-linear-gradient(left top,rgb(135,206,250),rgb(30,144,255));
+ background: -o-linear-gradient(bottom right,rgb(135,206,250),rgb(30,144,255));
+ background: -moz-linear-gradient(bottom right,rgb(135,206,250),rgb(30,144,255));
+ background: linear-gradient(to bottom right,rgb(135,206,250),rgb(30,144,255));
 }
 a{
   text-decoration:none;
@@ -8,21 +12,20 @@ a{
 .wrap{
  width: 1280px;
  margin: 0 auto;
- background-image: url(../img/background.png);
 }
 .header{
- border:1px black solid;
- background:#F5E8FF;
+ background: rgba(224,255,255,.6);
 }
-.head{
- width:100px;
+.LOGO{
+ width:150px;
  height:70px;
  margin: 10px 20px;
- border:1px black solid;
- background: #78FF78;
+ background-image: url();
+ background-color: rgba(255,255,255,0.3);
+ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
  text-align:center;
- line-height:30px;
-
+ line-height:70px;
+ float: left;
 }
 .search{
 	margin: 10px 20px;
@@ -30,18 +33,21 @@ a{
 	height: 40px;
 	float: left;
 	font-size: 20px;
-	border:1px black solid;
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .search input.keyword{
 	margin: 0px 30px;
 	width: 600px;
 	height: 30px;
 	font-size: 20px;
+	font-family:Microsoft JhengHei,微軟正黑體;
 }
 .search a{
 	display: block;
 	float: right;
-	border:1px black solid;
+	border:1px rgba(255,255,255,1) solid;
+	background-color:rgba(255,255,255,0.7);
 }
 .search  a .submit{
 	margin: 2px 30px;
@@ -51,22 +57,21 @@ a{
 	background-image: url(../img/search-icon.png);
 	background-size: 30px 30px;
 	border:1px black none;
-    background-color:rgba(0,0,0,0);
 }
 .function{
 	float: left;
-	border: 1px black solid;
 	margin: 10px;
 	padding: 15px;
-	background-color: #1212FF;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .function .login{
-	border: 1px black solid;
+	border:1px rgba(255,255,255,1) solid;
+	background-color:rgba(255,255,255,0.7);
 	height: 34px;
 	width: 50px;
 	float: left;
 	margin: 0px 10px;
-	background-color:#FFFF3B;
 }
 .function .login a{
 	display: block;
@@ -79,80 +84,55 @@ a{
 	clear: both;
 }
 .sider{
- border:1px black solid;
  margin:20px 0px;
  width: 210px;
  float: left;
- background-color:#78FFFF;
+ background: rgba(224,255,255,.6);
+ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .sider .category{
  font-size: 20px;
  border:1px black solid;
  margin: 10px 10px;
  text-align: center;
- background-color: #FFB5B5;
+ background-color: rgba(255,255,255,0.5);
+ font-weight: bold;
 }
 .sider .category ul{
  padding: 0px;
  margin: 0px;
 }
-.sider .category ul li.fir{
+.sider .category ul li{
+ font-weight: normal;
  list-style-type:none;
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
- color:green;
- background-color:#BABABA;
-}
-
-.sider .category ul li.sec{
- list-style-type:none;
- padding: 0px 10px;
- border-top:1px black solid;
- text-align: center;
- color:purple;
- background-color:#FFB630;
-}
-.sider .category ul li.thr{
- list-style-type:none;
- padding: 0px 10px;
- border-top:1px black solid;
- text-align: center;
- color:orange;
- background-color:#AC3BFF;
+ color:rgba(25,25,112);
+ background-color: rgba(255,255,255,0.7);
 }
 .sider .category ul li.main{
  list-style-type:none;
- font-size: 18px;
- background-color: green;
+ font-size: 20px;
+ font-weight: bold;
+ background-color: rgba(78,115,225,.5);
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
- 
 }
 .sider .category ul li.second{
  list-style-type:none;
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
- background-color: yellow;
- 
-
-}
-.sider .category ul li.third{
- list-style-type:none;
- padding: 0px 10px;
- border-top:1px black solid;
- text-align: center;
- background-color: #FF8800;
- 
-
+ background-color: rgba(118,165,245,.3);
 }
 .container{
- border:1px black solid;
  margin: 20px 0px 20px 20px;
  width: 1046px;
  float: left;
+ background: rgba(224,255,255,.6);
+ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .container .banner{
 	position: relative;
@@ -161,7 +141,7 @@ a{
  display: block;
  position: absolute;
  bottom: 50%;
- left:0px;
+ left:10px;
  background-image: url(../img/arrow-left.png);
  height:48px;
  width: 48px;
@@ -170,61 +150,72 @@ a{
  display: block;
  position: absolute;
  bottom: 50%;
- right:0px;
+ right:10px;
  background-image: url(../img/arrow-right.png);
  height:48px;
  width: 48px;
 }
 .container .banner .bannerchoice{
 	position: absolute;
-	top: 10px;
+	top: 30px;
 	height: 20px;
 	width: 1046px;
 	text-align: center;
 }
 .container .banner .bannerchoice .choicecircle{
 	display: inline-block;
-	background-image: url(../img/circle.png);
+	border-radius: 20px;
+	background-color: rgba(255,255,255,.6);
+	height: 20px;
+	width: 20px;
+	margin-left: 20px;
+}
+.container .banner .bannerchoice .choicecircle:active{
+	display: inline-block;
+	border-radius: 20px;
+	background-color: rgba(255,255,255,.9);
 	height: 20px;
 	width: 20px;
 	margin-left: 20px;
 }
 .container .banner img{
-	width: 1046px;
+	width: 1006px;
+	margin: 20px;
 	height: 400px;
-	background-color: #A8D5D7;
+	background-color: white;
 }
 .container .banner .bannertext{
 	width: 600px;
 	height: 50px;
-	bottom:20px;
-	left:20px;
+	bottom:30px;
+	left:30px;
 	margin: 2px 0px;
 	padding:0px 20px;
 	position: absolute;
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.7);
     color:white;
     font-size: 30px;
+    line-height: 50px;
+    border-radius:10px;
 }
 .rank{
- border:1px black solid;
- margin: 5px 5px;
+ margin: 5px 20px;
 }
 .rank h2{
  margin: 0px;
- background-color: #A8D5D7;
+ background-color: rgba(255,255,255,0.7);
 }
 .rank .rankbox{
- border:1px black solid;
  margin: 5px;
+ margin-bottom: 30px;
  float: left;
  background-color: white;
- 
+ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .rank .rankbox img{
-	width: 300px;
-	height: 300px;
+	width: 165px;
+	height: 165px;
 	margin: 10px 12px;
 }
 .rank .rankbox p{
@@ -235,9 +226,11 @@ a{
 	float: left;
 	width: 80px;
 	margin-top:20px;
-	padding: 20px;
+	padding-left: 20px;
 }
 .container .second_salesimage{
+	border: 5px rgba(255,255,255,1) solid;
+	border-radius: 5px;
 	height: 80px;
 	width: 80px;
 	margin-bottom: 40px;
@@ -278,11 +271,37 @@ a{
 	right: 0px;
 	width: 150px;
 	height: 40px;
+	border: 2px rgb(72,118,255) solid;
+	background: -webkit-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: -o-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: -moz-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: linear-gradient(rgb(135,206,250),rgb(30,144,255));
+    color: white;
+    font-size: 20px;
+    font-family:Microsoft JhengHei,微軟正黑體;
+    border-radius: 5px;
+}
+.container .salesinfo input:active{
+	position: absolute;
+	bottom: -30px;
+	right: 0px;
+	width: 150px;
+	height: 40px;
+	border: 2px rgb(72,118,255) solid;
+	background: -webkit-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: -o-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: -moz-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: linear-gradient(rgb(185,185,255),rgb(70,184,255));
+    color: white;
+    font-size: 20px;
+    font-family:Microsoft JhengHei,微軟正黑體;
+    border-radius: 5px;
 }
 .container .salesdetail{
-	border:1px black solid;
+	padding:10px;
 	margin: 0px 20px 10px 20px;
-	background-color:#33FFDD;
+	background-color:rgb(206,246,255);
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .container .salesdetail h2{
 	margin: 10px 0px 10px 10px;
@@ -290,14 +309,22 @@ a{
 }
 .container .salesdetail .salesdetail_container{
 	margin: 5px;
-	border:1px black solid;
+	border:3px rgb(175,230,230)  solid;
 	padding: 15px;	
 	background-color:white;
 }
+.container .salesdetail .salesdetail_container p{
+	margin-left: 20px;
+}
+.container .salesdetail .salesdetail_container h4{
+	margin: 7px 0px;
+	font-weight: bold;
+}
 .container .salescomment{
-	border:1px black solid;
-	margin: 0px 20px 10px 20px;
-	background-color: 	#66FF66;
+	padding: 10px;
+	background-color:rgb(206,246,255);
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	margin: 0px 10px 30px 10px;
 }
 .container .salescomment h2{
 	margin: 10px 0px 10px 10px;
@@ -309,16 +336,17 @@ a{
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
-	border:1px black solid;
+	border:3px rgb(175,230,230)  solid;
+	background-color: white;
 }
 .commentbox{
 	position: relative;
 
 }
 .container .salescomment .commentbox .commenttext{
-	border:1px black solid;
+	border:3px rgb(175,230,230)  solid;
 	margin: 5px;
-	width: 850px;
+	width: 800px;
 	float: left;
 	min-height: 80px;
 	padding: 15px;
@@ -333,15 +361,18 @@ a{
 	float: right;
 	font-size: 50px;
 	bottom:10px;
-	right:30px;
+	right:10px;
+	border:3px rgb(175,230,230)  solid;
+	background-color: white;
 }
 .container .salescomment .commentbox .username{
+	border:3px rgb(165,200,250)  solid;
 	font-family: Microsoft JhengHei,微軟正黑體;
 	font-size: 20px;
 	margin: 10px;
 }
 .container .salescomment .commentbox .commentmessage{
- 	border:1px black solid;
+ 	border:3px rgb(165,200,250)  solid;
 	margin: 5px;
 	float: left;
 	padding: 5px;
@@ -352,19 +383,19 @@ a{
 	float: right;
 	font-size: 50px;
 	width: 70px;
-	margin: 20px 30px 20px 0px;
+	margin: 20px 20px 20px 0px;
 }
 .container .salescomment .commentbox .send{
 	float: right;
 	width: 70px;
-	margin: 0px 30px 20px 10px;
+	margin: 0px 20px 20px 10px;
 }
 
 .container .searchresult{
 	position: relative;
-	border:1px black solid;
+ 	border:3px rgb(165,200,250)  solid;
 	margin: 10px 5px;
-	background-color: white;
+	background-color: rgba(255,255,255,.9);
 }
 .container .searchresult img{
 	width: 200px;
@@ -380,12 +411,12 @@ a{
 .container .searchresult .SearchSalesText h2{
 	font-size: 30px;
 	margin: 10px;
-	color:blue;
+	color:rgb(39,64,139);
 }
 .container .searchresult .SearchSalesText p{
 	font-size: 20px;
 	margin: 10px;
-	color:orange;
+	color:rgb(58,95,205);
 }
 .container .searchresult .SearchSalesPoint{
 	font-size: 50px;
@@ -400,6 +431,32 @@ a{
 	position: absolute;
 	bottom: 50px;
 	right: 20px;
+	border: 2px rgb(72,118,255) solid;
+	background: -webkit-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: -o-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: -moz-linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	background: linear-gradient(rgb(135,206,250),rgb(30,144,255));
+	font-family:Microsoft JhengHei,微軟正黑體;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.container .searchresult input:active{
+	width: 150px;
+	height: 60px;
+	margin-right:20px; 
+	position: absolute;
+	bottom: 50px;
+	right: 20px;
+	border: 2px rgb(72,118,255) solid;
+	background: -webkit-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: -o-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: -moz-linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	background: linear-gradient(rgb(185,185,255),rgb(70,184,255));
+	font-family:Microsoft JhengHei,微軟正黑體;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
 }
 .container .order{
 	float: right;
@@ -413,39 +470,42 @@ a{
 	margin: 10px;
 }
 .footer{
-	border-top:1px black solid;
+	border-top:3px rgba(248,248,255,.5) solid;
 	padding-top: 20px;
 }
 .footer_inform{
-	border: 1px black solid;
 	float: left;
 	width: 700px;
 	margin-left: 50px;
 	text-align: center;
 	font-size: 20px;
-	background-color: pink;
+	background: rgba(224,255,255,.6);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .footer_link{
 	float: right;
 	width: 400px;
-	border: 1px black solid;
 	text-align: center;
 	margin-right: 50px;
-	background-color: 	#FFFF00;
+	background: rgba(224,255,255,.6);
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .footer_link h2{
+	font-weight: normal;
 	margin: 0;
 	font-size: 20px;
-	border-bottom: 1px black solid;
+	border-bottom: 2px rgba(248,248,255,.7) solid;
 }
 .footer_link .fb_icon{
  display: inline-block;
+ border-radius: 5px;
  width: 50px;
  height: 50px;
  margin: 10px 20px;
  background-image: url(../img/fb_icon.png);
 }
 .footer_link .twitter_icon{
+ border-radius: 5px;
  display: inline-block;
  width: 50px;
  height: 50px;
