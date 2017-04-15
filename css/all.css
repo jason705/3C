@@ -1,4 +1,4 @@
-html{
+﻿html{
  font-family:Microsoft JhengHei,微軟正黑體;
 }
 a{
@@ -8,16 +8,21 @@ a{
 .wrap{
  width: 1280px;
  margin: 0 auto;
+ background-image: url(../img/background.png);
 }
 .header{
  border:1px black solid;
+ background:#F5E8FF;
 }
-.header img{
- width:150px;
+.head{
+ width:100px;
  height:70px;
  margin: 10px 20px;
  border:1px black solid;
- float:left;
+ background: #78FF78;
+ text-align:center;
+ line-height:30px;
+
 }
 .search{
 	margin: 10px 20px;
@@ -53,6 +58,7 @@ a{
 	border: 1px black solid;
 	margin: 10px;
 	padding: 15px;
+	background-color: #1212FF;
 }
 .function .login{
 	border: 1px black solid;
@@ -60,6 +66,7 @@ a{
 	width: 50px;
 	float: left;
 	margin: 0px 10px;
+	background-color:#FFFF3B;
 }
 .function .login a{
 	display: block;
@@ -76,36 +83,70 @@ a{
  margin:20px 0px;
  width: 210px;
  float: left;
+ background-color:#78FFFF;
 }
 .sider .category{
  font-size: 20px;
  border:1px black solid;
  margin: 10px 10px;
  text-align: center;
+ background-color: #FFB5B5;
 }
 .sider .category ul{
  padding: 0px;
  margin: 0px;
 }
-.sider .category ul li{
+.sider .category ul li.fir{
  list-style-type:none;
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
+ color:green;
+ background-color:#BABABA;
+}
+
+.sider .category ul li.sec{
+ list-style-type:none;
+ padding: 0px 10px;
+ border-top:1px black solid;
+ text-align: center;
+ color:purple;
+ background-color:#FFB630;
+}
+.sider .category ul li.thr{
+ list-style-type:none;
+ padding: 0px 10px;
+ border-top:1px black solid;
+ text-align: center;
+ color:orange;
+ background-color:#AC3BFF;
 }
 .sider .category ul li.main{
  list-style-type:none;
  font-size: 18px;
- background-color:rgba(0,0,0,0.2);
+ background-color: green;
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
+ 
 }
 .sider .category ul li.second{
  list-style-type:none;
  padding: 0px 10px;
  border-top:1px black solid;
  text-align: center;
+ background-color: yellow;
+ 
+
+}
+.sider .category ul li.third{
+ list-style-type:none;
+ padding: 0px 10px;
+ border-top:1px black solid;
+ text-align: center;
+ background-color: #FF8800;
+ 
+
 }
 .container{
  border:1px black solid;
@@ -171,15 +212,19 @@ a{
 }
 .rank h2{
  margin: 0px;
+ background-color: #A8D5D7;
 }
 .rank .rankbox{
  border:1px black solid;
  margin: 5px;
  float: left;
+ background-color: white;
+ 
 }
+
 .rank .rankbox img{
-	width: 170px;
-	height: 170px;
+	width: 300px;
+	height: 300px;
 	margin: 10px 12px;
 }
 .rank .rankbox p{
@@ -208,6 +253,7 @@ a{
 	position: relative;
 	width: 500px;
 	margin: 0px 30px 50px 0px;
+
 }
 .container .salesinfo h2{
 	font-size: 30px;
@@ -236,18 +282,22 @@ a{
 .container .salesdetail{
 	border:1px black solid;
 	margin: 0px 20px 10px 20px;
+	background-color:#33FFDD;
 }
 .container .salesdetail h2{
 	margin: 10px 0px 10px 10px;
+
 }
 .container .salesdetail .salesdetail_container{
 	margin: 5px;
 	border:1px black solid;
 	padding: 15px;	
+	background-color:white;
 }
 .container .salescomment{
 	border:1px black solid;
 	margin: 0px 20px 10px 20px;
+	background-color: 	#66FF66;
 }
 .container .salescomment h2{
 	margin: 10px 0px 10px 10px;
@@ -263,6 +313,7 @@ a{
 }
 .commentbox{
 	position: relative;
+
 }
 .container .salescomment .commentbox .commenttext{
 	border:1px black solid;
@@ -271,6 +322,7 @@ a{
 	float: left;
 	min-height: 80px;
 	padding: 15px;
+	background-color: white;
 }
 .container .salescomment .commentbox .commenttext h3{
 	margin: 10px 0px;
@@ -312,6 +364,7 @@ a{
 	position: relative;
 	border:1px black solid;
 	margin: 10px 5px;
+	background-color: white;
 }
 .container .searchresult img{
 	width: 200px;
@@ -327,10 +380,12 @@ a{
 .container .searchresult .SearchSalesText h2{
 	font-size: 30px;
 	margin: 10px;
+	color:blue;
 }
 .container .searchresult .SearchSalesText p{
 	font-size: 20px;
 	margin: 10px;
+	color:orange;
 }
 .container .searchresult .SearchSalesPoint{
 	font-size: 50px;
@@ -368,6 +423,7 @@ a{
 	margin-left: 50px;
 	text-align: center;
 	font-size: 20px;
+	background-color: pink;
 }
 .footer_link{
 	float: right;
@@ -375,6 +431,7 @@ a{
 	border: 1px black solid;
 	text-align: center;
 	margin-right: 50px;
+	background-color: 	#FFFF00;
 }
 .footer_link h2{
 	margin: 0;
