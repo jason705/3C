@@ -20,7 +20,7 @@ a{
  width:150px;
  height:70px;
  margin: 10px 20px;
- background-image: url();
+ background-image: url(../img/logo.png);
  background-color: rgba(255,255,255,0.3);
  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
  text-align:center;
@@ -67,7 +67,7 @@ a{
 }
 .function .login{
 	border:1px rgba(255,255,255,1) solid;
-	background-color:rgba(255,255,255,0.7);
+	background-color:yellow;
 	height: 34px;
 	width: 50px;
 	float: left;
@@ -136,6 +136,7 @@ a{
 }
 .container .banner{
 	position: relative;
+	background-color: purple;
 }
 .container .banner .arrow_left{
  display: block;
@@ -322,7 +323,7 @@ a{
 }
 .container .salescomment{
 	padding: 10px;
-	background-color:rgb(206,246,255);
+	background-color:purple;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 	margin: 0px 10px 30px 10px;
 }
@@ -412,6 +413,7 @@ a{
 	font-size: 30px;
 	margin: 10px;
 	color:rgb(39,64,139);
+	color:green;
 }
 .container .searchresult .SearchSalesText p{
 	font-size: 20px;
@@ -463,6 +465,7 @@ a{
 	height: 30px;
 	font-size: 20px;
 	padding:20px;
+
 }
 .container .order select{
 	font-size: 20px;
@@ -479,7 +482,7 @@ a{
 	margin-left: 50px;
 	text-align: center;
 	font-size: 20px;
-	background: rgba(224,255,255,.6);
+	background-color: pink;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .footer_link{
@@ -487,7 +490,7 @@ a{
 	width: 400px;
 	text-align: center;
 	margin-right: 50px;
-	background: rgba(224,255,255,.6);
+	background-color: green;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .footer_link h2{
